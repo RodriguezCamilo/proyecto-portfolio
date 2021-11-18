@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar-toggler {
+  margin-left: 10px;
+}
+
+.bg-dark {
+  background-color: #0a0a0a !important;
+}
+
+#nav {
+  margin: auto;
+}
+
+.nav-link {
+  margin: 0 15px 0 15px;
+}
+
+#navPadding {
+  padding: 15px 0px 15px 0px;
+}
+
+body {
+  font-size: 16px;
+  color: #feffeb;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+.titulo {
+  margin: 30px;
+  margin-top: 50px;
+  font-size: 50px;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+.underline {
+  margin: auto;
+  margin-bottom: 50px;
+  height: 0.2em;
+  width: 30%;
+  background-color: black;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main--backgroundImg {
+  background-image: url("img/background1.webp");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main__section {
+  font-size: 16px;
+  color: #f4f5ed;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 50px;
+  width: 35%;
+  background-color: rgba(24, 24, 24, 0.514);
+  backdrop-filter: blur(2px);
+}
+
+.main__section__h1 {
+  font-size: 50px;
+}
+
+.main__section__h2 {
+  font-size: 40px;
+}
+
+.main__section__button {
+  text-decoration: none;
+  color: #f4f5ed;
+  background-color: #0a0a0a;
+  display: block;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+
+.main__section__button--bigsize {
+  font-size: 20px;
+  width: 50%;
+  padding: 15px;
+  border-width: 20px;
+}
+
+.main__section__button:hover {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  color: black;
+  background-color: #f4f5ed;
+  text-decoration: none;
+}
+
+.main__section__button--smallsize {
+  font-size: 15px;
+  width: 30%;
+  padding: 10px;
+}
+
+.about, .portfolio {
+  width: 70%;
+  margin: 10vh auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #030202;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.about__img {
+  width: 35%;
+  margin: auto;
+  min-width: 250px;
+  border-radius: 5px;
+  border-width: 100px;
+  border-color: white;
+}
+
+.about__text {
+  font-size: 20px;
+  color: #f4f5ed;
+  text-align: left;
+  width: 50vh;
+  padding: 5% 0;
+  margin: auto;
+  overflow: auto;
+  height: 100%;
+  max-height: 550px;
+}
+.about__text a {
+  text-decoration: underline;
+  color: #f4f5ed;
+}
+
+.habilidades {
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.habilidades img {
+  object-fit: scale-down;
+  object-position: center;
+  height: 50vh;
+}
+
+.rotar:hover {
+  transform: rotate(20deg);
+  transition: 1s;
+}
+
+.carousel-control-next-icon {
+  background-image: url(img/arrow-right.png);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(img/arrow-left.png);
+}
+
+.portfolio {
+  padding: 50px;
+}
+
+.contactos {
+  padding: 50px 0px;
+  margin: 200px auto;
+  width: 70%;
+  background-color: black;
+  border-radius: 10px;
+}
+.contactos img {
+  height: 100px;
+  margin: auto 10%;
+}
+
+.scale:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+
+footer {
+  display: block;
+  background: #0a0a0a;
+  padding: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: white;
+}
+
+.not {
+  text-align: center;
+  background: white;
+  height: 80vh;
+}
+.not section {
+  margin: 10vh 15% 0px;
+  padding: 5%;
+  background-color: #030202;
+  border-radius: 10px;
+  height: 50vh;
+}
+.not section p {
+  color: white;
+}
+
+@media only screen and (max-width: 940px) {
+  .main--backgroundImg {
+    background-image: url("img/background1-mobile.webp");
+  }
+
+  main section h1 {
+    font-size: 30px;
+  }
+  main section h2 {
+    font-size: 20px;
+  }
+
+  .main__section {
+    width: 80%;
+  }
+
+  .main__section__button--bigsize {
+    font-size: 17px;
+    width: 70%;
+    padding: 25px;
+  }
+
+  .main__section__button--smallsize {
+    font-size: 15px;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .about, .portfolio {
+    justify-content: center;
+  }
+
+  .about__text {
+    font-size: 16px;
+    min-width: 150px;
+  }
+
+  .contactos img {
+    margin: 10px 10%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  li {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  li {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about__img {
+    width: 35%;
+    margin: auto;
+    min-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

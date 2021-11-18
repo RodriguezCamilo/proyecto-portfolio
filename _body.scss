@@ -1,0 +1,32 @@
+@mixin text ($font, $color, $align){
+    font-size: $font;
+    color: $color;
+    text-align: $align;
+}
+
+body {
+    @include text (16px, rgb(254, 255, 235), center);
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+    
+
+.titulo {
+    margin: 30px;
+    margin-top: 50px;
+    font-size: 50px;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.underline {
+    margin: auto;
+    margin-bottom: 50px;
+    height: 0.2em;
+    width: 30%;
+    background-color: black;
+}
