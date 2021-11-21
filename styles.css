@@ -53,20 +53,16 @@ p {
   background-color: black;
 }
 
-.main {
+#main {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.main--backgroundImg {
   background-image: url("img/background1.webp");
   background-size: cover;
   background-attachment: fixed;
 }
-
-.main__section {
+#main article {
   font-size: 16px;
   color: #f4f5ed;
   text-align: center;
@@ -75,6 +71,21 @@ p {
   width: 35%;
   background-color: rgba(24, 24, 24, 0.514);
   backdrop-filter: blur(2px);
+}
+#main article a {
+  text-decoration: none;
+  color: #f4f5ed;
+  background-color: #0a0a0a;
+  display: block;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+#main article a:hover {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  color: black;
+  background-color: #f4f5ed;
+  text-decoration: none;
 }
 
 .main__section__h1 {
@@ -85,31 +96,14 @@ p {
   font-size: 40px;
 }
 
-.main__section__button {
-  text-decoration: none;
-  color: #f4f5ed;
-  background-color: #0a0a0a;
-  display: block;
-  border-radius: 5px;
-  margin: 30px auto;
-}
-
-.main__section__button--bigsize {
+.button--bigsize {
   font-size: 20px;
   width: 50%;
   padding: 15px;
   border-width: 20px;
 }
 
-.main__section__button:hover {
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  color: black;
-  background-color: #f4f5ed;
-  text-decoration: none;
-}
-
-.main__section__button--smallsize {
+.button--smallsize {
   font-size: 15px;
   width: 30%;
   padding: 10px;
