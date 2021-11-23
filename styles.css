@@ -234,17 +234,17 @@ footer a:hover {
     font-size: 20px;
   }
 
-  .main__section {
+  #main article {
     width: 80%;
   }
 
-  .main__section__button--bigsize {
+  .button--bigsize {
     font-size: 17px;
     width: 70%;
     padding: 25px;
   }
 
-  .main__section__button--smallsize {
+  .button--smallsize {
     font-size: 15px;
     width: 50%;
     padding: 20px;
