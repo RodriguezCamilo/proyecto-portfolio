@@ -1,4 +1,7 @@
 .portfolio {  
+    img {
+        width: 70%;
+    }
     @extend .about;
     padding: 50px;
 }
