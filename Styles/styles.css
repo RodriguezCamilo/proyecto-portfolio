@@ -58,7 +58,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("img/background1.webp");
+  background-image: url("../img/background1.webp");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -164,11 +164,11 @@ p {
 }
 
 .carousel-control-next-icon {
-  background-image: url(img/arrow-right.png);
+  background-image: url("../img/arrow-right.png");
 }
 
 .carousel-control-prev-icon {
-  background-image: url(img/arrow-left.png);
+  background-image: url("../img/arrow-left.png");
 }
 
 .portfolio {
@@ -227,7 +227,7 @@ footer a:hover {
 
 @media only screen and (max-width: 940px) {
   .main--backgroundImg {
-    background-image: url("img/background1-mobile.webp");
+    background-image: url("../img/background1-mobile.webp");
   }
 
   main section h1 {
