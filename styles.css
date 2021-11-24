@@ -174,8 +174,8 @@ p {
 .portfolio {
   padding: 50px;
 }
-.portfolio img {
-  width: 70%;
+.portfolio h4 {
+  color: black;
 }
 
 .contactos {
