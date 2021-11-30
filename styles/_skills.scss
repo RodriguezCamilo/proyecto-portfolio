@@ -1,7 +1,6 @@
 .habilidades {
-    margin: auto;
-    margin-top: 50px;
-    width: 50%;
+    @extend .about;
+    padding: 20px 0;
 }
 
 .habilidades img {
@@ -16,9 +15,21 @@
 }
 
 .carousel-control-next-icon {
-    background-image: url("../img/arrow-right.png");
+    background-image: none;
 }
 
 .carousel-control-prev-icon {
-    background-image: url("../img/arrow-left.png");
+    background-image: none;
+}
+
+.carousel-control-next {
+    width: 50%;
+}
+
+.carousel-control-prev {
+    width: 50%;
+}
+
+.carousel {
+    background-color: black;
 }

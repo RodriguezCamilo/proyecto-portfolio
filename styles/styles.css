@@ -35,8 +35,7 @@ body {
 }
 
 .titulo {
-  margin: 30px;
-  margin-top: 50px;
+  margin: 150px 0 50px;
   font-size: 50px;
   color: black;
 }
@@ -47,7 +46,7 @@ p {
 
 .underline {
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   height: 0.2em;
   width: 30%;
   background-color: black;
@@ -109,7 +108,7 @@ p {
   padding: 10px;
 }
 
-.about, .portfolio {
+.about, .portfolio, .habilidades {
   width: 70%;
   margin: 10vh auto;
   padding: 20px;
@@ -147,9 +146,7 @@ p {
 }
 
 .habilidades {
-  margin: auto;
-  margin-top: 50px;
-  width: 50%;
+  padding: 20px 0;
 }
 
 .habilidades img {
@@ -164,11 +161,23 @@ p {
 }
 
 .carousel-control-next-icon {
-  background-image: url("../img/arrow-right.png");
+  background-image: none;
 }
 
 .carousel-control-prev-icon {
-  background-image: url("../img/arrow-left.png");
+  background-image: none;
+}
+
+.carousel-control-next {
+  width: 50%;
+}
+
+.carousel-control-prev {
+  width: 50%;
+}
+
+.carousel {
+  background-color: black;
 }
 
 .portfolio {
@@ -180,7 +189,7 @@ p {
 
 .contactos {
   padding: 50px 0px;
-  margin: 200px auto;
+  margin: 100px auto 200px;
   width: 70%;
   background-color: black;
   border-radius: 10px;
@@ -253,7 +262,7 @@ footer a:hover {
     padding: 20px;
   }
 
-  .about, .portfolio {
+  .about, .habilidades, .portfolio {
     justify-content: center;
   }
 
@@ -270,17 +279,29 @@ footer a:hover {
   li {
     font-size: 12px;
   }
+
+  #main article {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .about, .habilidades, .portfolio {
+    width: 100%;
+    background-color: #030202;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px;
+  }
+
+  .contactos {
+    width: 100%;
+    background-color: #030202;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px;
+  }
 }
 @media only screen and (max-width: 575px) {
   li {
     font-size: 16px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .about__img {
-    width: 35%;
-    margin: auto;
-    min-width: 200px;
   }
 }
 
