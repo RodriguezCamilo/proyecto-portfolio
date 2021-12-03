@@ -54,18 +54,56 @@
 
 @media only screen and (max-width: 670px) {
     li {
-        font-size: 12px;
+            font-size: 12px;
+        }
+
+    #main {
+        article{
+            width: 100%;
+            border-radius: 0px;
+        }
     }
 
-#main {
-    article{
-        width: 100%;
-        border-radius: 0px;
-    }
-}
+        .about, .contactos, .portfolio {
+            width: 100%;
+        }
 
-    .about, .contactos, .portfolio {
-        width: 100%;
+    .portfolio {
+        grid-template-areas: "port"
+                             "port"
+                             "port"
+                             "port";
+    }
+
+    .port{
+        div {
+            div {
+                transition-property: background-color;
+                transition-duration: 0.5s;
+                background-color: rgb(3, 2, 2);
+            }
+            transition-property: backdrop-filter;
+            transition-duration: 0.5s;
+            backdrop-filter: blur(2px);
+            color: rgb(254, 255, 235);
+            p {
+                color: rgb(254, 255, 235);
+            }
+            a {    
+                text-decoration: none;
+                color: black;
+                background-color: rgb(244, 245, 237);
+                display: block;
+                margin: 30px auto;
+            }
+            a:hover{    
+            transition-property: background-color;
+            transition-duration: 1s;
+            color: rgb(244, 245, 237);
+            background-color: rgb(10, 10, 10);
+            text-decoration: none;
+            }
+        }
     }
 
 }

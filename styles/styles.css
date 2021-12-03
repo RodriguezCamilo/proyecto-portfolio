@@ -215,17 +215,17 @@ a {
 
 .port:hover {
   transform: scale(1.03);
-  transition: 1s;
+  transition: 0.5s;
 }
 .port:hover div {
   transition-property: backdrop-filter;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   backdrop-filter: blur(2px);
   color: #feffeb;
 }
 .port:hover div div {
   transition-property: background-color;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   background-color: #030202;
 }
 .port:hover div p {
@@ -345,6 +345,39 @@ footer a:hover {
 
   .about, .habilidades, .contactos, .portfolio {
     width: 100%;
+  }
+
+  .portfolio {
+    grid-template-areas: "port" "port" "port" "port";
+  }
+
+  .port div {
+    transition-property: backdrop-filter;
+    transition-duration: 0.5s;
+    backdrop-filter: blur(2px);
+    color: #feffeb;
+  }
+  .port div div {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: #030202;
+  }
+  .port div p {
+    color: #feffeb;
+  }
+  .port div a {
+    text-decoration: none;
+    color: black;
+    background-color: #f4f5ed;
+    display: block;
+    margin: 30px auto;
+  }
+  .port div a:hover {
+    transition-property: background-color;
+    transition-duration: 1s;
+    color: #f4f5ed;
+    background-color: #0a0a0a;
+    text-decoration: none;
   }
 }
 @media only screen and (max-width: 575px) {

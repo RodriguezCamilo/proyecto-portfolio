@@ -36,15 +36,15 @@ a {
 
 .port:hover{ 
     transform: scale(1.03);
-    transition: 1s;
+    transition: 0.5s;
     div {
         div {
             transition-property: background-color;
-            transition-duration: 1s;
+            transition-duration: 0.5s;
             background-color: rgb(3, 2, 2);
         }
         transition-property: backdrop-filter;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         backdrop-filter: blur(2px);
         color: rgb(254, 255, 235);
         p {
