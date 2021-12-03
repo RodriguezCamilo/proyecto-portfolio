@@ -118,16 +118,14 @@ p {
   background-color: #030202;
   box-shadow: 0px 0px 5px black;
 }
-
-.about__img {
+.about img, .habilidades img {
   width: 35%;
   margin: auto;
   min-width: 250px;
   border-width: 100px;
   border-color: white;
 }
-
-.about__text {
+.about p, .habilidades p {
   font-size: 20px;
   color: #f4f5ed;
   text-align: left;
@@ -138,7 +136,7 @@ p {
   height: 100%;
   max-height: 550px;
 }
-.about__text a {
+.about p a, .habilidades p a {
   text-decoration: underline;
   color: #f4f5ed;
 }
@@ -293,7 +291,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 940px) {
-  .main--backgroundImg {
+  #main {
     background-image: url("../img/background1-mobile.webp");
   }
 
