@@ -10,8 +10,10 @@
 }
 
 .rotar:hover {
-    transform: rotate(20deg);
-    transition: 1s;
+    img{
+        transform: rotate(20deg);
+        transition: 1s;
+    }
 }
 
 .carousel-control-next-icon {

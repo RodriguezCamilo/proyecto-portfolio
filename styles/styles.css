@@ -151,7 +151,7 @@ p {
   height: 50vh;
 }
 
-.rotar:hover {
+.rotar:hover img {
   transform: rotate(20deg);
   transition: 1s;
 }
